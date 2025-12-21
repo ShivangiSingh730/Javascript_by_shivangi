@@ -35,3 +35,11 @@ console.log(typeof outsideTemp);
 console.log(typeof scoreValue);
 console.log(typeof myfunction);
 console.log(typeof anotherid);
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primitive) , Heap(Non-Primitive)
+
+let myUtubename = "shivangi9404"
+let anothername = myUtubename
+console.log(anothername);
