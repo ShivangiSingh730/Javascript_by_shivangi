@@ -8,7 +8,7 @@ const scoreValue = 100.3
 
 const isLoggedtIn = false
 const outsideTemp = null
-let userEmail;
+let userEmail; // undefined hi hai by default
 
 const id = Symbol('123')
 const anotherid  = Symbol('123')
@@ -30,16 +30,30 @@ let myObj = {
 const myfunction = function(){
     console.log("hello world");
 }
-console.log(typeof bigNumber);
-console.log(typeof outsideTemp);
-console.log(typeof scoreValue);
-console.log(typeof myfunction);
-console.log(typeof anotherid);
+console.log(typeof bigNumber);// return type is undefined
+console.log(typeof outsideTemp);// return type is  object
+console.log(typeof scoreValue);// return type is number
+console.log(typeof myfunction);// return type is function object
+console.log(typeof anotherid);// return type is Symbol
 
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-// Stack(Primitive) , Heap(Non-Primitive)
+// Stack memory is used (Primitive) , Heap memory is used (Non-Primitive)
 
 let myUtubename = "shivangi9404"
 let anothername = myUtubename
+anothername="chaiaurcode"
+console.log(myUtubename)
 console.log(anothername);
+
+let userOne = {
+    email:"pv8893148@google.com",
+    upi:"user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "shivi@google.com"
+console.log(userOne.email)
+console.log(userTwo.email)// both return shivi@google.com
+
